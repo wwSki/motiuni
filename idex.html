@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generator de Moțiuni🎲</h1>
+            <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+                <span id="darkModeIcon">🌙</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="dropdowns">
+                <div class="dropdown">
+                    <label for="themeSelect">Temă:</label>
+                    <select id="themeSelect"></select>
+                </div>
+                <div class="dropdown">
+                    <label for="typeSelect">Tip:</label>
+                    <select id="typeSelect"></select>
+                </div>
+                <div class="dropdown">
+                    <label for="infosSelect">Infoslide:</label>
+                    <select id="infosSelect"></select>
+                </div>
+                <div class="dropdown">
+                    <label for="levelSelect">Nivel:</label>
+                    <select id="levelSelect"></select>
+                </div>
+                <div class="dropdown">
+                    <label for="languageSelect">Limbă:</label>
+                    <select id="languageSelect"></select>
+                </div>
+            </div>
+
+            <button onclick="getRandomMotion()">Generează🔥</button>
+
+            <div id="motionOutput" class="output"></div>
+        </div>
+    </div>
+
+    <script src="themesOptions.json" id="themesOptions" type="application/json"></script>
+    <script src="typesOptions.json" id="typesOptions" type="application/json"></script>
+    <script src="infosOptions.json" id="infosOptions" type="application/json"></script>
+    <script src="levelOptions.json" id="levelOptions" type="application/json"></script>
+    <script src="languageOptions.json" id="languageOptions" type="application/json"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

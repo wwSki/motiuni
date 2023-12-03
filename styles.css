@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background-color: #f0f0f0;
+    --background-color2: #f5f5f5;
+    --text-color: #333;
+    --accent-color: #66a3ff;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: "Geologica", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.dark-mode-toggle {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.main-content {
+    margin-top: 20px;
+}
+
+.dropdowns {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown {
+    flex: 1;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--background-color2);
+    color: var(--text-color);
+}
+
+.generate-button {
+    background-color: #80b3ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+    background-color: #4d94ff;
+}
+
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--background-color);
+}
+
+button {
+    color: var(--text-color);
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 7.5px;
+    background-color: var(--background-color2);
+    border: none;
+    
+}
+
+body.dark-mode-active {
+    --background-color: #262626;
+    --text-color: #fff;
+    --accent-color: #4d94ff;
+    --border-color: #999;
+    --background-color2: #333;
+}
+
+.dark-mode-active .container {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+}
+
